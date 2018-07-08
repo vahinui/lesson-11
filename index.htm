@@ -16,7 +16,15 @@
        
         //Lesson 4, Step 1
         
-        console.log( $('input[type="text"]').css('background-color') );
+        toggleStyle = function() {
+            if( $('input[type="text"]').css('background-color') === 'rgb(255, 0, 0)' ){
+                //set background color to white
+                $('input[type="text"]').css('backgroun-color', 'rgb(255, 0, 0)');
+            }else{
+                //set background color to red
+                
+            }
+        }
         
     
     }
