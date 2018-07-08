@@ -7,52 +7,9 @@
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>
 	$(function(){
-		// All jQuery code goes here
-        // Lesson 3, Step 1
-        window.onload = function(){
-            var element = document.getElementById('alcoveLogo');
-            element.style.opacity = 0.2;
-        }
-        
-        //Lesson 3, Step 2
-        
-        $('.servicesBtn').css('color', "#FFF");
-       
-        //Lesson 4, Step 1
-        
-        var toggleStyle = function() {
-            
-            var inputFields = $('input[type="text"]');
-            
-            if( inputFields.css('background-color') === 'rgb(255, 0, 0)' ){
-                //set background color to white
-                inputFields.css('background-color', 'rgb(255, 255, 255)');
-            }else{
-                //set background color to red
-                 inputFields.css('background-color', 'rgb(255, 0, 0)');
-            }
-        }
-        
-        $('#ReqAQuoteBtn').click( toggleStyle );
-        
-        //Lesson 4, Step 2
-        
-        $('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
-        
-        $("<li><strong>This is also great !!</stong></li>").prependTo(".coreValues");
-        
-        
-        var nameVal = $('input[name="nameVal"]');
-        
-        function FillEmpty(){
-            if( nameVal.val == ''){
-                nameVal.val( 'John Doe' );
-            }
-        }
-        
-        $('#ReqAQuoteBtn').click( FillEmpty );
-    
-    })
+		// jQuery Code goes here
+			
+	})
 	</script>
 </head>
 <body>
