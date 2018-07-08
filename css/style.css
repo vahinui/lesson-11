@@ -43,12 +43,23 @@ body {
 	background-color:rgb(235, 253, 212);
 }
 
+
 .navbar {
 	position:relative;
 	width:710px;
 	height:100px;
 	float:left;
 	background:rgba(207, 251, 203, 0.55);
+}
+.navfoot{
+    position: relative;
+    font-family: 'Raleway', sans-serif; 
+}
+
+.navfoot li{
+    font-size: 12px;
+    padding: 6px;
+    float: right;
 }
 
 .navbar > .navigation {

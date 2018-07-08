@@ -8,8 +8,18 @@
 	<script>
 	$(function(){
 		// All jQuery code goes here
-		
-		
+		//example 1
+		$('li:first-of-type').css('background-color', rgb'(248, 95, 95)');
+        //example 2
+        $('li:only-of-type').css('background-color', rgb'(248, 95, 95)');
+        //example 3 
+        $('li:contains("Crush")').css('background-color', 'rgb(248, 95, 95)');
+        //example 4
+        $('li:empty').css('background-color', 'rgb(248, 95, 95)');
+        //example 5
+        $('li:has("h4")').css('background-color', 'rgb(248, 95, 95)');
+        //example 6
+        $('li:nth-child(3)').css('background-color', 'rgb(248, 95, 95)');
 		
 	})
 	</script>
