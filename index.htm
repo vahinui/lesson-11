@@ -62,6 +62,17 @@
         $('.coreValues').append("<li><strong>This is brand new !!</strong></li>");
         
         $("<li><strong>This is also great !!</strong></li>").appendTo(".coreValues");
+        
+        var nameVal = $('input[name="nameVal"]');
+        
+        function FillEmpty(){
+            if( nameVal.val() == ''){
+                nameVal.val( 'John Doe');
+            }    
+        }
+        
+        $('#ReqAQuoteBtn').click( FillEmpty );
+
     
     )
 	</script>
@@ -93,22 +104,22 @@
 					<br>
 					<div class="FormFieldHolder">
 						<div class="labelHolder"><label>Full Name</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="FieldHolder"><input type="text" name="nameVal"></div>
 					</div>
 
 					<div class="FormFieldHolder">
 						<div class="labelHolder"><label>E-Mail</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="FieldHolder"><input type="text" name="emailVal"></div>
 					</div>
 
 					<div class="FormFieldHolder">
 						<div class="labelHolder"><label>Phone</label></div>
-						<div class="FieldHolder"><input type="text"></div>
+						<div class="FieldHolder"><input type="text" name="phoneNum"></div>
 					</div>
 
 					<div class="FormFieldHolder">
 						<div class="labelHolder"></div>
-						<div class="FieldHolder"><button id="ReqAQuoteBtn">Request A Quote !</button></div>
+						<div class="FieldHolder"><button type="button" id="ReqAQuoteBtn" data-code="028">Request A Quote !</button></div>
 					</div>
 				</form>
 			</div>
